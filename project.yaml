@@ -91,7 +91,7 @@ Resources:
         - !Ref EC2SecurityGroup
       ImageId: ami-0e83be366243f524a
       SubnetId: !Ref PublicSubnet
-      KeyName: mass1
+      KeyName: mass1 #use your already created keypair in the respective region
   MyS3Bucket:
     Type: 'AWS::S3::Bucket'
     Properties:
